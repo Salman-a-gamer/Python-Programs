@@ -10,10 +10,12 @@ while end:
     else:
         break
 max = 0
+winner = ''
 for k,v in auctioneers.items():
     if v > max:
         max = v
-for k,v in auctioneers.items():
-    if v == max:
-        print('Congrats' , k, 'won the auction by bidding', v, 'Dirhams')
+        winner += k
+print('Congrats' , k, 'won the auction by bidding', v, 'Dirhams')
+
+# we can use max(auctioneers, key = auctioneers.get) to get key of max value
 
