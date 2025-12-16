@@ -27,6 +27,8 @@ for i in range(nr_numbers):
 
 print(password)
 '''
+# an optimised soluion is using a list and then using .shuffle() method.....
+
 p = ''
 l=0
 s =0
